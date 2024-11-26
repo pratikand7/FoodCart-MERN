@@ -1,0 +1,51 @@
+
+#contact-details{
+    background-color: #FFF6E9;
+    color: #fbb325;
+    font-weight: bold;
+    align-content: center;
+}
+
+#details{
+    display: flex;
+    color: #fbb325;
+}
+
+#address{
+    margin-top: -2%;
+    margin-right: 10%;
+    margin-left: 5%;
+    text-align: center;
+}
+
+#phone{
+    margin-top: -2%;
+    margin-left: 20%;
+    text-align: center;
+}
+
+#email{
+    margin-top: -2%;
+    margin-right: 5%;
+    margin-left: 25%;
+    text-align: center;
+}
+
+#ad{
+    width: 50px;
+    height: 50px;
+}
+
+#ph{
+    width: 50px;
+    height: 50px;
+}
+
+#em{
+    width: 40px;
+    height: 50px;
+}
+
+#heading{
+    text-align: center;
+}

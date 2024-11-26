@@ -1,0 +1,159 @@
+/* show-products */
+
+.App{
+    background-color: aliceblue;
+}
+
+h1{
+	font-size: 3.2em;
+	line-height: 1.1;
+}
+
+body{
+    background-color: aliceblue;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 16px;
+    padding: 10px;
+  }
+  
+  .grid-item {
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 5px;
+    text-align: center;
+  }
+  
+  .grid-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-top: 10px;
+  }
+
+#pName{
+  color: #000000;
+}
+#pPrice{
+  color: #000000;
+}
+
+#cart-btn{
+	background-color: #3498db;
+	border-radius: 50px;
+	height: 30px;
+}
+
+
+/* add-products */
+
+#feedback-page{
+	text-align:center;
+}
+
+#form-main{
+	width:100%;
+	float:left;
+	padding-top:0px;
+	align-items: center;
+	padding-left: 100px;
+}
+
+#form-div {
+	background-color:rgba(72,72,72,0.4);
+	padding-left:35px;
+	padding-right:35px;
+	padding-top:35px;
+	padding-bottom:50px;
+	width: 225px;
+	float: left;
+	left: 50%;
+	position: absolute;
+  	margin-top:30px;
+	margin-left: -260px;
+	border-radius: 0%;
+	-moz-border-radius: 7px;
+	-webkit-border-radius: 7px;
+}
+
+.feedback-input {
+	color:#000000;
+	font-family: Helvetica, Arial, sans-serif;
+  	font-weight:500;
+	font-size: 18px;
+	border-radius: 0;
+	line-height: 22px;
+	background-color: #fbfbfb;
+	padding: 13px 13px 13px 54px;
+	margin-bottom: 10px;
+	width:100%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+  	border: 3px solid rgba(0,0,0,0);
+}
+
+.feedback-input:focus{
+	background: #fff;
+	box-shadow: 0;
+	border: 3px solid #3498db;
+	color: #3498db;
+	outline: none;
+  	padding: 13px 13px 13px 54px;
+}
+
+.focused{
+	color:#30aed6;
+	border:#30aed6 solid 3px;
+}
+
+#name{
+	width: 200px;
+	height: 40px;
+}
+
+#price{
+	width: 200px;
+  	height: 40px;
+}
+
+#image{
+  width: 200px;
+  height: 40px;
+  background-color: rgba(72,72,72,0.4);;
+}
+
+#button-blue{
+	font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+	float:left;
+	width: 200px;
+	border: #fbfbfb solid 4px;
+	cursor:pointer;
+	background-color: #fbb325;
+	color:white;
+	font-size:24px;
+
+	padding-bottom:22px;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+  	margin-top:-4px;
+  	font-weight:700;
+	height: 40px;
+}
+
+@media only screen and (max-width: 580px) {
+	#form-div{
+		left: 3%;
+		margin-right: 3%;
+		width: 88%;
+		margin-left: 0;
+		padding-left: 3%;
+		padding-right: 3%;
+	}
+}
