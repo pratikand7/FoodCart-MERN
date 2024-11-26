@@ -4,6 +4,7 @@ const cartRoute = require('./controllers/cart');
 const authRoute = require('./controllers/login')
 const cors = require('cors');
 const mongoose = require("mongoose");
+require('dotenv').config();
 
 const app = express();
 app.use(express.json());
@@ -13,7 +14,7 @@ app.get('/', (req,res) => {
     res.send("Hello World");
 });
 
-const mongoURI = "mongodb+srv://pratikuymar:sak1IIQPIAXUANej@mydb.3398y.mongodb.net/?retryWrites=true&w=majority&appName=MyDb";
+const mongoURI = process.env.MONGO_URI;
   mongoose
   .connect(mongoURI)
   .then(() => console.log("Connected to MongoDB Atlas"))
