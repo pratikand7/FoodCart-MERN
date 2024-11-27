@@ -11,7 +11,6 @@ export default function Login() {
     try {
       const response = await login(formData.username, formData.password);
       localStorage.setItem('token', response.data.token);
-      alert('Login successful');
       navigate("/show-products");
     } catch (err:any) {
       console.error(err.response.data.message);
@@ -21,6 +20,16 @@ export default function Login() {
   };
   return (
     <>
+      <nav id="home-nav">
+      <ul id="nav-list">
+        <li>
+        <img src="logo.png" height="40px" width="120%"/>
+        </li>
+        <li id="right-item">
+          <a href="/contact">Contact</a>
+        </li>
+      </ul>
+    </nav>
       <div id="home">
 
         <div id="info">

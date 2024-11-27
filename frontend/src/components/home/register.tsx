@@ -20,6 +20,16 @@ export default function Register() {
   };
   return (
     <>
+      <nav id="home-nav">
+      <ul id="nav-list">
+        <li>
+        <img src="logo.png" height="40px" width="120%"/>
+        </li>
+        <li id="right-item">
+          <a href="/contact">Contact</a>
+        </li>
+      </ul>
+    </nav>
         <div className="reg-page">
           <div className="form">
             <h2 id="reg">REGISTER NOW</h2>

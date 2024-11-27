@@ -34,10 +34,28 @@ interface Product {
       }
     }
 
+    const cartTotal = products.reduce((total, product) => total + product.price, 0);
+
     if(products){
         return (
             <>
+              <nav id="cart-nav">
+      <ul id="nav-list">
+        <li>
+        <img src="logo.png" height="40px" width="120%"/>
+        </li>
+        <li id="right-item">
+          <a href="/show-products">Menu</a>
+        </li>
+        <li>
+          <a href="/contact">Contact</a>
+        </li>
+      </ul>
+    </nav>
               <h1 id="cart-h1">Cart Items : <button id="checkout-btn">Checkout</button></h1>
+              <div id="cart-total">
+        <h3>Total Value: ₹{cartTotal}</h3>
+      </div>
               
               <div className="grid-container">
                 {products.map((product) => (
@@ -53,6 +71,7 @@ interface Product {
                     <input type="number" defaultValue={1} id="quantity" />
                     <button id="delete-btn" onClick={() => handleDelete(product._id)}>Delete</button>
                     </p>
+
                   </div>
                 ))}
               </div>

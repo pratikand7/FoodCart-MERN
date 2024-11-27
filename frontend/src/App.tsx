@@ -16,15 +16,15 @@ import "./App.css";
 export default function App() {
   return (
     <Router>
-        <Routes>
-          <Route path="/" element={< Login />} />
-          <Route path="/register" element={< Register />} />
-          <Route path="/show-products" element={<ShowProds />} />
-          <Route path="/add-product" element={<AddPro />} />
-          <Route path="/show-cart" element={<ShowCart />} />
-          <Route path="/contact" element={<Contact/>} />
-        </Routes>
-      </Router>
+      <Routes>
+        <Route path="/" element={< Login />} />
+        <Route path="/register" element={< Register />} />
+        <Route path="/show-products" element={<ShowProds />} />
+        <Route path="/add-product" element={<AddPro />} />
+        <Route path="/show-cart" element={<ShowCart />} />
+        <Route path="/contact" element={<Contact/>} />
+      </Routes>
+    </Router>
   );
 }
 

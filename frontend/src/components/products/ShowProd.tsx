@@ -33,7 +33,7 @@ function ShowProds () {
         price: product.price,
         imagePath: product.imagePath,
       });
-      alert(response.data.message); // Notify the user
+      alert(response.data.message);
     } catch (error) {
       console.error("Error adding to cart:", error);
       alert("Failed to add product to cart. Please try again.");
@@ -42,6 +42,19 @@ function ShowProds () {
 
   return (
     <>
+    <nav id="cart-nav">
+      <ul id="nav-list">
+        <li>
+        <img src="logo.png" height="40px" width="120%"/>
+        </li>
+        <li id="right-item">
+          <a href="/show-cart">Cart</a>
+        </li>
+        <li>
+          <a href="/contact">Contact</a>
+        </li>
+      </ul>
+    </nav>
       <h1>Product Details</h1>
       <div className="grid-container">
         {products.map((product) => (

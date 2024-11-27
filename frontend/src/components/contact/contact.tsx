@@ -3,6 +3,16 @@ import '../css/contact.css'
 export default function contact(){
     return(
         <>
+        <nav id="cart-nav">
+      <ul id="nav-list">
+        <li>
+        <img src="logo.png" height="40px" width="120%"/>
+        </li>
+        <li id="right-item">
+          <a href="/">Home</a>
+        </li>
+      </ul>
+    </nav>
         <div id="contact-details">
         <h2 id ='heading'>Get In Touch</h2>
         <div id="details">

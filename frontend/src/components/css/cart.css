@@ -6,10 +6,6 @@ body{
     background-color: aliceblue;
 }
 
-#cart-h1{
-  background-color:rgba(72,72,72,0.4);;
-}
-
 .grid-container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
@@ -44,11 +40,14 @@ body{
   height: 45px;
   width: 100px;
   border-radius: 15px;
-  background-color: #fbb325;
+  background-color: #ffffff;
   position: absolute;
   right: 0;
   margin-right: 40px;
   margin-top: 5px;
+  color: #fbb325;
+  font-weight: bold;
+  font-size: large;
 }
 
 #delete-btn{
