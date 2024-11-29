@@ -7,13 +7,13 @@ const router = express.Router();
 const JWT_SECRET = 'pratik_1234';
 
 router.post('/register', async (req, res) => {
-    const { username, password } = req.body;
+    const { username, email, number, password } = req.body;
   
     try {
-      const existingUser = await User.findOne({ username });
+      const existingUser = await User.findOne({ email });
       if (existingUser) return res.status(400).json({ message: 'User already exists' });
   
-      const user = User.create({ username, password});
+      const user = User.create({ username, email, number, password});
   
       res.status(201).json({ message: 'User created successfully' });
     } catch (err) {
